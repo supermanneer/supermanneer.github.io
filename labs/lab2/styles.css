@@ -115,40 +115,40 @@ grid-auto-rows:100px;
 /* Grid Part 3 */
 
 #grid-section3 .grid {
-background-color:yellow;
 display: inline-grid;
-margin:0;
-padding:0;
- grid-template-columns: repeat(2, 3fr);
- grid-template-rows: repeat(3, 200px);
+width: 100%;
+gap:10px;
+ grid-template-columns: 30% 30% 30% 30% 30%;
+ grid-template-rows: 100px auto 100px;
+  grid-template-columns: auto 30%;
 
 }
 
 #grid-section3 .box1 {
  grid-column-start:1;
-  grid-column-end: 3;
+  grid-column-end: 5;
 height:100px;
 }
 
 #grid-section3 .box2 {
 height:300px;
-width: 300px;
-  grid-column-start:2;
-  grid-column-end: 2;
+
+  grid-column-start:4;
+  grid-column-end: 5;
 
 }
 
 #grid-section3 .box3 {
 height:300px;
-  grid-column-start:1;
-  grid-column-end: 2;
-    grid-row-start:2;
-  grid-row-end: 3;
+grid-column-start: 1;
+grid-column-end:  span 3;
+grid-row-start:2;
+grid-row-end: 3;
 }
 
 #grid-section3 .box4 {
 	 grid-column-start:1;
-  grid-column-end: 3;
+  grid-column-end:5;
 height:100px;
 }
 
@@ -170,8 +170,12 @@ height:100px;
 #transition-section .box a:hover {
 	background-color: #cc0000;
 	color: #fff;
+	transition:0.5s;
 
+}
 
+#transition-section .box a:not(:hover) {
+	transition:2s;
 }
 
 /* end Transition Part */
