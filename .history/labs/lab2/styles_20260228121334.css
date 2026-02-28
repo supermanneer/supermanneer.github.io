@@ -1,0 +1,151 @@
+/* Flexbox Part 1 */
+#flex-section1{
+	margin: 0;
+}
+#flex-section1 ul {
+	padding: 0;
+	display: flex;
+	justify-content: space-evenly;
+	align-content:center;
+	margin: 0;
+
+}
+#flex-section1 ul li{
+list-style: none;
+text-align: center;
+}
+/* end Flexbox Part 1 */
+
+
+/* Flexbox Part 2 */
+
+#flex-section2 ul {
+	display: flex;
+	justify-content: space-between;
+	padding:0;
+	margin:0;
+	
+}
+
+#flex-section2 li {
+flex:1;
+list-style: none;
+
+}
+
+#flex-section2 .item1 {
+}
+
+#flex-section2 .item2 {
+order: 2;
+}
+
+#flex-section2 .item3 {	
+	
+}
+
+/* end Flexbox Part 2 */
+
+
+/* Flexbox Part 3 */
+
+#flex-section3 .box {
+/* background-color:yellow; */
+margin:auto;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+#flex-section3 .card{
+
+}
+
+
+#flex-section3 .tags ul {
+display: flex;
+ flex-wrap:wrap;
+justify-content: start;
+text-align: left;
+padding:0;
+/* background-color: blue; */
+}
+
+#flex-section3 .tags ul li{
+	list-style: none;
+}
+
+/* end Flexbox Part 3 */
+
+
+/* Grid Part 1 */
+
+#grid-section1 .grid {
+display: grid;
+grid-template-columns: repeat(4, 10px [col-start] 250px [col-end]) 10px;
+/* grid-template-columns:repeat(4, 1fr); */
+gap: 20px;
+}
+
+/* end Grid Part 1 */
+
+
+/* Grid Part 2 */
+
+#grid-section2 .gridboxblue {
+
+}
+
+#grid-section2 .gridboxred {
+
+}
+
+/* end Grid Part 2 */
+
+
+/* Grid Part 3 */
+
+#grid-section3 .grid {
+
+}
+
+#grid-section3 .box1 {
+
+}
+
+#grid-section3 .box2 {
+
+}
+
+#grid-section3 .box3 {
+
+}
+
+#grid-section3 .box4 {
+
+}
+
+/* end Grid Part 3 */
+
+
+/* Transition Part */
+
+#transition-section .box a {
+	display: inline-block;
+	background-color: #ccc;
+	color: #000;
+	padding: 20px;
+	text-decoration: none;
+
+
+}
+
+#transition-section .box a:hover {
+	background-color: #cc0000;
+	color: #fff;
+
+
+}
+
+/* end Transition Part */
