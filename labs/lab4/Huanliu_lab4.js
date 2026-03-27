@@ -60,9 +60,7 @@
 
 (function(){
     const screenWidth=window.innerWidth;
-    console.log(screenWidth);
     if(screenWidth>1024){
-
 document.querySelector('.grid.grid-cols-1.md\\:grid-cols-2.gap-6').style.gridTemplateColumns='repeat(4, minmax(0, 1fr))';
 console.log(document.querySelector('.grid.grid-cols-1.md\\:grid-cols-2.gap-6'));
 }
@@ -82,9 +80,7 @@ document.querySelectorAll('.w-full.h-auto')[3].src='https://picsum.photos/id/453
     var email=document.getElementsByName('email')[0].value.trim();
     var submit=document.querySelector('.bg-blue-600.text-white.px-6.py-2.w-full.md\\:w-auto.rounded.hover\\:bg-blue-700');
   
-   console.log(name);
-   console.log(email);
-
+  
     if(name==null || name==""|| email==null||email==""){
   //If the user did not input a name or email in the form show an alert box with the, Please provide a name and email.
         submit.onclick=function(){
@@ -99,5 +95,5 @@ document.querySelectorAll('.w-full.h-auto')[3].src='https://picsum.photos/id/453
     }
     }
  
-})();
+})();  
 
