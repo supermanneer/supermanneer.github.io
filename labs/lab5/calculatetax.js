@@ -2,7 +2,8 @@
 ITMD 541-04 Graduate Student
             Name : Huan Liu 
 Student Number: A20503484 
- 
+Live Url:  https://supermanneer.github.io/labs/lab5/calculater.html
+Repo link: https://github.com/supermanneer/supermanneer.github.io/tree/main/labs/lab5
 */
 // calculate total bill with tax when user input bill total
 // Converted Tip Amount=Total Bill with Tax (11%)*tip percentage
