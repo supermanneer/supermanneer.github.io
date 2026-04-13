@@ -1,0 +1,93 @@
+<!-- 
+  ITMD 541-04 Graduate Student
+            Name : Huan Liu 
+   Student Number: A20503484 
+   
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+    
+</head>
+
+<body>
+    <div class="content">
+        <div class="topname">
+            Tip Calculator
+        </div>
+        <form action="" enctype="multipart/form-data">
+            <ul id="calul">
+                <li>Currency conversion:</li>
+                <li>$1 USD = €0.95 EUR for EUROS</li>
+                <li>$1 USD = ₹85 INR for Rupees</li>
+                <li id="billTotalLi">
+                    <label class="billtotallabel" for="billTotal"> Bill Total:&nbsp; &nbsp; </label>
+                <div class="wrap">
+                    <span>$</span>   
+                    <input class="billTotal" id="billTotal" type=text>
+                </div> 
+                  
+                 <div class="taxexemptwrap"> 
+                    &nbsp; &nbsp;  Tax exempt  
+                     <input type="checkbox" value="Tax exempt" id="taxexempt">
+                    </div>
+                </li>
+                <li class="addli noshow" id="addli">
+                    Please enter a valid active number for the bill total.
+                </li>
+                <li>
+                    <label for="billTotalTax"> Total Bill with Tax (11%):&nbsp; &nbsp;</label>
+                    <div class="wrap">
+                  <span>&nbsp;&nbsp;</span> 
+                   <input class="billTotalTax" id="billTotalTax" type=text name="billTotalTax" disabled="true">
+                 </div>
+                </li>
+                <li>
+                    <label for="currency">Select Currency:&nbsp; &nbsp;</label>
+                    <div class="wrap">
+                    <span>&nbsp;&nbsp;</span>  
+                     <select id="currency" class="currency" name="currency">
+                        <option value="usd">US Dollars ($)</option>
+                        <option value="eur">Euros (€)</option>
+                        <option value="inr">Indian Rupees (₹)</option>
+                    </select>
+                    </div>
+                </li>
+                <li>
+
+                    <label for="pctage">Tip:&nbsp; &nbsp;</label>
+                    <div class="wrap"> 
+                    <span>&nbsp;&nbsp;</span>   
+                    <input type="range" id="pctage" class="pctage" min="0" max="100" value="0">
+                    <span id="percentageNumber" class="percentageNumber">0 </span>
+                </div>
+                </li>
+                <li>
+                    <label for="tipAmount">Converted Tip Amount:&nbsp; &nbsp;</label>
+                    <div class="wrap"> 
+                  <span id="currencysymbol" class="currencysymbol">$</span>  
+                  <input class="tipAmount" id="tipAmount" type=text disabled="true">
+                  </div>
+                </li>
+                <li>
+                    <label for="tipTaxAmount">Converted Total Bill with Tip and Tax:&nbsp; &nbsp;</label>
+                    <div class="wrap"> 
+                    <span id="currencysymbol" class="currencysymbol">$</span>   
+                    <input class="tipTaxAmount" id="tipTaxAmount" type=text disabled="true">
+                </div>
+                </li>
+
+            </ul>
+        </form>
+    </div>
+</body>
+
+</html>
+
+<script src="calculatetax.js"></script> 

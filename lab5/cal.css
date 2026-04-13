@@ -1,0 +1,424 @@
+/* 
+  ITMD 541-04 Graduate Student
+            Name : Huan Liu 
+   Student Number: A20503484 
+   
+*/
+
+body {
+    background-color: rgba(121, 185, 250, 0.329);
+    text-align: center;
+    margin: 0
+}
+
+body .content {
+    font-family: calibri, Arial;
+    width: 95%;
+    border-radius: 15px;
+    background-color: white;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid rgba(218, 213, 213, 0.681);
+    box-shadow: 5px 5px 5px rgba(249, 249, 249, 0.75), 5px -5px 5px rgba(249, 249, 249, 0.75), -5px 5px 5px rgba(249, 249, 249, 0.75), -5px -5px 5px rgba(249, 249, 249, 0.75)
+}
+
+body .content ul,
+body .content li {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+body .content .topname {
+    font-size: 3.8rem;
+    padding-left: 20px;
+    border-radius: 15px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #F7DB02;
+    color: white;
+    font-weight: bold
+}
+
+@media (max-width:769px) and (min-width:601px) {
+    body .content .topname {
+        font-size: 2.5rem
+    }
+}
+
+@media only screen and (max-width:600px) {
+    body .content .topname {
+        width: 100%;
+        font-size: 2rem;
+        height: 50px;
+        line-height: 50px;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        padding-left: 0
+    }
+}
+
+body .content ul {
+    text-align: left;
+    border-radius: 5px;
+    margin-top: 5px
+}
+
+body .content ul li {
+    border-bottom: 1px solid rgba(126, 126, 127, 0.2);
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin: 0;
+    padding-left: 20px;
+    vertical-align: middle
+}
+
+body .content ul li label {
+    display: inline-block;
+    width: 45%;
+    text-align: right;
+    border-radius: 5px;
+    height: 37px;
+    line-height: 37px;
+    margin: 5px;
+    vertical-align: top
+}
+
+@media only screen and (max-width:600px) {
+    body .content ul li label {
+        background-color: rgba(235, 248, 93, 0.112);
+        width: 100%;
+        font-size: 1rem;
+        display: block;
+        text-align: center;
+        height: 28px;
+        line-height: 28px;
+        margin: 0;
+        border-radius: 0
+    }
+}
+
+@media (max-width:769px) and (min-width:601px) {
+    body .content ul li label {
+        width: 45%;
+        text-align: center;
+        font-size: 1rem;
+        background-color: white
+    }
+}
+
+body .content ul li .wrap {
+    display: inline-block;
+    width: 35%
+}
+
+body .content ul li .wrap input[type="text"] {
+    height: 25px;
+    border-radius: 5px;
+    margin: 5px;
+    width: 85%
+}
+
+@media only screen and (max-width:600px) {
+    body .content ul li .wrap input[type="text"] {
+        width: 80%;
+        margin: 2px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 1rem
+    }
+}
+
+body .content ul li .wrap .percentageNumber {
+    margin-left: 10px;
+    display: inline-block;
+    background-color: #34adc29e;
+    vertical-align: middle;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    position: relative;
+    border-radius: 5px
+}
+
+body .content ul li .wrap .percentageNumber::before {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 10px solid #34adc29e;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+body .content ul li .wrap .currency {
+    height: 32px;
+    width: 30%;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center
+}
+
+@media (max-width:769px) and (min-width:601px) {
+    body .content ul li .wrap .currency {
+        width: 85%;
+        text-align: center;
+        font-size: 1rem
+    }
+}
+
+@media only screen and (max-width:600px) {
+    body .content ul li .wrap .currency {
+        width: 85%
+    }
+}
+
+body .content ul li .wrap .pctage {
+    width: 30%
+}
+
+@media (max-width:769px) and (min-width:601px) {
+    body .content ul li .wrap .percentageNumber {
+        width: 23%
+    }
+
+    body .content ul li .wrap .pctage {
+        width: 55%
+    }
+}
+
+@media only screen and (max-width:600px) {
+    body .content ul li .wrap .percentageNumber {
+        width: 23%
+    }
+
+    body .content ul li .wrap .pctage {
+        width: 55%
+    }
+}
+
+body .content ul li .wrap .currencysymbol {
+    display: inline-block
+}
+
+body .content ul li .wrap .billTotal {
+    font-weight: bold;
+    font-size: 1.2em;
+    outline: none;
+    text-indent: 3px;
+    text-align: center;
+    color: black;
+    border: 1px solid #d4d7d7;
+    border-radius: 3px;
+    width: 30%;
+    padding: 5px
+}
+
+body .content ul li .wrap .billTotal:hover {
+    border: 1px solid #31b7b7
+}
+
+body .content ul li .wrap .billTotalTax,
+body .content ul li .wrap .tipAmount,
+body .content ul li .wrap .tipTaxAmount {
+    background-color: rgba(222, 246, 246, 0.366);
+    border: 1px dotted #94e7e7;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    width: 30%;
+    padding: 5px
+}
+
+@media only screen and (max-width:600px) {
+
+    body .content ul li .wrap .billTotal .billTotalTax,
+    body .content ul li .wrap .tipAmount,
+    body .content ul li .wrap .tipTaxAmount {
+        width: 80%;
+        font-size: 1rem;
+        padding: 5px;
+        height: 25px;
+        line-height: 25px
+    }
+}
+
+@media (max-width:769px) and (min-width:601px) {
+    body .content ul li .wrap {
+        width: 50%;
+        text-align: center
+    }
+}
+
+@media only screen and (max-width:600px) {
+    body .content ul li .wrap {
+        width: 100%;
+        text-align: center;
+        display: block
+    }
+}
+
+body .content ul li:first-child {
+    background-color: #f0f5ea86;
+    font-weight: bold;
+    text-align: center;
+    border-top: 5px solid white;
+    color: #1a2720;
+    border-bottom: none;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px
+}
+
+@media only screen and (max-width:600px) {
+    body .content ul li:first-child {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border-left: none;
+        border-right: none;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        background-color: white
+    }
+}
+
+body .content ul li:nth-child(2) {
+    background-color: #f0f5ea86;
+    font-weight: bold;
+    text-align: center;
+    color: #690808;
+    font-size: 1.2em;
+    border: none;
+    border-left: 3px solid white;
+    border-right: 3px solid white
+}
+
+@media only screen and (max-width:600px) {
+    body .content ul li:nth-child(2) {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border-left: none;
+        border-right: none;
+        background-color: white
+    }
+}
+
+body .content ul li:nth-child(3) {
+    background-color: #f0f5ea86;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+    border-bottom: 5px solid white;
+    color: #690808;
+    border-top: none;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px
+}
+
+@media only screen and (max-width:600px) {
+    body .content ul li:nth-child(3) {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+        border-left: none;
+        border-right: none;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        background-color: white
+    }
+}
+
+@media only screen and (max-width:600px) {
+    body .content ul li {
+        padding-left: 0;
+        margin: 0;
+        padding-bottom: 10px
+    }
+}
+
+body .content ul .noshow {
+    display: none
+}
+
+body .content ul .show {
+    color: red;
+    display: block;
+    text-align: center
+}
+
+body .content ul .taxexemptwrap {
+    display: inline-block
+}
+
+@media only screen and (max-width:600px) {
+    body .content ul .taxexemptwrap {
+        width: 95%;
+        height: 37px;
+        line-height: 37px;
+        display: block;
+        text-align: center
+    }
+}
+
+@media (max-width:769px) and (min-width:601px) {
+    body .content ul .taxexemptwrap {
+        width: 95%;
+        text-align: center;
+        display: block;
+        height: 37px;
+        line-height: 37px
+    }
+}
+
+@media only screen and (max-width:600px) {
+    body .content ul {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0
+    }
+}
+
+@media only screen and (max-width:600px) {
+    body .content {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        border: 0;
+        height: 100%;
+        box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.75), 5px -5px 5px rgba(255, 255, 255, 0.75), -5px 5px 5px rgba(255, 255, 255, 0.75), -5px -5px 5px rgba(255, 255, 255, 0.75)
+    }
+}
+
+@media only screen and (max-width:600px) {
+    body {
+        background-color: white
+    }
+}
+
+/*# sourceMappingURL=./cal.css.map */
