@@ -373,7 +373,8 @@ body .content ul .taxexemptwrap {
         height: 37px;
         line-height: 37px;
         display: block;
-        text-align: center
+        text-align: center;
+        font-size: 1rem
     }
 }
 
@@ -383,7 +384,8 @@ body .content ul .taxexemptwrap {
         text-align: center;
         display: block;
         height: 37px;
-        line-height: 37px
+        line-height: 37px;
+        font-size: 1rem
     }
 }
 
