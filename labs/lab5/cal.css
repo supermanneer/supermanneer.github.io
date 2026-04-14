@@ -361,7 +361,8 @@ body .content ul .noshow {
 body .content ul .show {
     color: red;
     display: block;
-    text-align: center
+    text-align: center;
+    height: 26px
 }
 
 body .content ul .taxexemptwrap {
