@@ -108,6 +108,8 @@ function showSunInfor(cityName,latitude,longtitude){
     .catch(error=>console.error('error',error));
 }
 
+// get random color
+
 function getRandomColor(){
     let r=Math.floor(Math.random()*256)+100;
     let g=Math.floor(Math.random()*256)+100;
@@ -128,11 +130,7 @@ if ("geolocation" in navigator) {
       var longitude = position.coords.longitude; // longitude
       console.log("Latitude: " + latitude + ", Longitude: " + longitude);
       cityname="";
-      var option=document.createElement('option');
-      option.text="";
-      option.className="optionname";
-      option.value="";
-      city.appendChild(option);
+      city.value = '0';
       showSunInfor(cityname,latitude,longitude);
     }, function(error) {
       // failure to get geolocation
