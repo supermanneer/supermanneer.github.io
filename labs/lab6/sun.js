@@ -19,7 +19,7 @@ Michigan 44.31484,-85.60236
 Atlanta  33.749,-84.38798
 */
 
-
+//  onload to have ten cities
 
 window.onload=function(){
     loadSelection();
@@ -37,6 +37,9 @@ let cityArray=[
     [9,'Michigan',44.31484,-85.60236],
     [10,'Atlanta',33.749,-84.38798]
      ];
+
+    
+//  add options to select
 function loadSelection(){
  
 var city=document.getElementById("city");
@@ -49,7 +52,8 @@ var city=document.getElementById("city");
   }
   
 }
-// when choose selection
+
+// when selected option changed
 
 function selectChange(obj){
     var showgeo=document.getElementById("showgeo");
@@ -64,6 +68,7 @@ function selectChange(obj){
 
 }
 
+//  show suninformation under below
 function showSunInfor(cityName,latitude,longtitude){
     var color=getRandomColor();
     let today = new Date();
@@ -96,9 +101,7 @@ function showSunInfor(cityName,latitude,longtitude){
     .then(response=>response.json())
     .then(data=>{
      
- 
- 
-     document.querySelector('#tomorrowdate').innerHTML=`<span class="backspan" style="background:${color}">${data.results.date}</span>`
+        document.querySelector('#tomorrowdate').innerHTML=`<span class="backspan" style="background:${color}">${data.results.date}</span>`
         document.querySelector('#tomosunrise').innerHTML=`<span class="backspan" style="background:${color}">${data.results.sunrise}</span>`
         document.querySelector('#tomosunset').innerHTML=`<span class="backspan" style="background:${color}">${data.results.sunset}</span>`
         document.querySelector('#tomodawn').innerHTML=`<span class="backspan" style="background:${color}">${data.results.dawn}</span>`
