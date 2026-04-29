@@ -1,0 +1,86 @@
+<!-- 
+  ITMD 541-04 Graduate Student
+            Name : Huan Liu 
+   Student Number: A20503484 
+Live Url:  https://supermanneer.github.io/labs/lab6/sunrisesunset.html
+Repo link: https://github.com/supermanneer/supermanneer.github.io/tree/main/labs/lab6
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun rise Sun set</title>
+    <link rel="stylesheet" href="sun.css">
+    
+</head>
+
+<body>
+    <div class="content">
+ <header>
+    Sunrise Sunset
+ </header>
+       <main> 
+      <div class="top">
+ <div class="column">Find Information</div>
+<div class="wrap">
+  <select name="city" id="city"  class="location" onchange="selectChange(this.options[this.selectedIndex].value)">
+ 
+    <option class="optionname">Please choose City</option>  
+
+  </select>
+  <input type="button" class="btn" value="get Location" onclick="getLocation()">
+    <div id="showgeo" class="showgeo">Select city at Latitude:34.0522,Longtitude:-118.2437</div>
+</div>
+
+
+</div>
+      <section class="down">
+  <div class="left">
+  <ul class="leftwrap">
+    <li>Today's Report</li>
+    <li><span class="reportcolumn">Date:</span>  <strong><span id="todaydate"></span></strong></li>
+    <li><span class="reportcolumn">Sunrise:</span> <strong><span id="todaysunrise"></span></strong></li>
+    <li><span class="reportcolumn">Sunset:</span>  <strong><span id="todaysunset"></span></strong></li>
+    <li><span class="reportcolumn">Dawn:</span>  <strong><span  id="todaydawn"></span></strong></li>
+    <li><span class="reportcolumn">Dusk:</span>  <strong><span  id="todaydusk"></span></strong></li>
+    <li><span class="reportcolumn">Solar Noon:</span>  <strong><span  id="todaysolarnoon"></span></strong></li>
+    <li><span class="reportcolumn">Day Length:</span>  <strong><span  id="todaydaylength"></span></strong></li>
+    <li><span class="reportcolumn"> Time Zone:</span> <strong><span  id="todaytimezone"></span></strong></li>
+   
+  </ul>
+  </div>
+
+  <div class="right">
+    <ul class="rightwrap">
+        <li>Tomorrow's Report</li>
+        <li><span class="reportcolumn">Date:</span> <strong><span id="tomorrowdate"></span></strong></li>
+        <li><span class="reportcolumn"> Sunrise:</span> <strong><span id="tomosunrise"></span></strong></li>
+        <li><span class="reportcolumn"> Sunset:</span> <strong><span id="tomosunset"></span></strong></li>
+        <li><span class="reportcolumn"> Dawn:</span> <strong><span id="tomodawn"></span></strong></li>
+        <li><span class="reportcolumn"> Dusk:</span> <strong><span id="tomodusk"></span></strong></li>
+        <li><span class="reportcolumn"> Solar Noon:</span> <strong><span id="tomosolarnoon"></span></strong></li>
+        <li><span class="reportcolumn"> Day Length:</span> <strong><span id="tomodaylength"></span></strong></li>
+        <li><span class="reportcolumn"> Time Zone:</span> <strong><span id="tomotimezone"></span></strong></li>
+      </ul>
+
+  </div>
+
+    </section>
+   
+     </main>
+
+
+        
+   
+    </div>
+    <footer>
+      API Credit to SunriseSunset.io
+          </footer>
+</body>
+
+</html>
+
+<script src="sun.js"></script> 

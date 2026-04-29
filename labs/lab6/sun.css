@@ -1,0 +1,320 @@
+body {
+    text-align: center;
+    background: linear-gradient(to right, rgba(248, 4, 4, 0.77647059), orange, yellow, green, blue, indigo, violet);
+    margin: 0;
+    font-family: calibri, Arial, Helvetica, sans-serif
+}
+
+body .content {
+    font-family: calibri, Arial;
+    width: 95%;
+    border-radius: 15px;
+    background: rgba(249, 249, 249, 0.75);
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid rgba(218, 213, 213, 0.681);
+    box-shadow: 5px 5px 5px rgba(249, 249, 249, 0.75), 5px -5px 5px rgba(249, 249, 249, 0.75), -5px 5px 5px rgba(249, 249, 249, 0.75), -5px -5px 5px rgba(249, 249, 249, 0.75);
+    display: block
+}
+
+body .content ul,
+body .content li {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+body .content header {
+    height: 50px;
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet), linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent
+}
+
+@media only screen and (max-width:600px) {
+    body .content header {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        border: 0;
+        text-align: center
+    }
+}
+
+body .content main .top .column {
+    font-size: 26px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px
+}
+
+@media only screen and (max-width:600px) {
+    body .content main .top .column {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        border: 0;
+        font-size: 20px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center
+    }
+}
+
+body .content main .top .wrap {
+    text-align: center
+}
+
+body .content main .top .wrap .location {
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+    text-indent: 5px;
+    font-size: 14px
+}
+
+body .content main .top .wrap .location .optionname {
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    text-align: center
+}
+
+@media only screen and (max-width:600px) {
+    body .content main .top .wrap .location .optionname {
+        padding: 0;
+        margin: 0 auto;
+        width: 100px;
+        border: 0;
+        font-size: 12px;
+        text-align: center
+    }
+}
+
+body .content main .top .wrap .btn {
+    width: 10%;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px
+}
+
+@media only screen and (max-width:600px) {
+    body .content main .top .wrap .btn {
+        font-size: 14px
+    }
+}
+
+@media only screen and (max-width:600px) {
+    body .content main .top .wrap .location {
+        padding: 0;
+        margin: 0 auto;
+        width: 300px;
+        border: 0;
+        font-size: 14px;
+        display: block;
+        text-align: center
+    }
+
+    body .content main .top .wrap .btn {
+        display: block;
+        width: 10%;
+        height: 30px;
+        width: 200px;
+        margin: 0 auto;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 8px
+    }
+}
+
+body .content main .top .wrap .searchindicate {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center
+}
+
+body .content main .top .wrap .searchindicate .downwrap {
+    width: 90%;
+    text-align: left;
+    padding-left: 3px
+}
+
+body .content main .top .wrap .showgeo {
+    height: 50px;
+    line-height: 50px
+}
+
+body .content main .top .wrap .showgeo .boldcity {
+    font-weight: bold
+}
+
+@media only screen and (max-width:600px) {
+    body .content main .top .wrap .showgeo {
+        white-space: normal;
+        font-size: 12px;
+        overflow: visible;
+        width: 92%;
+        margin: 0 auto;
+        line-height: 20px;
+        margin-top: 3px
+    }
+}
+
+@media only screen and (max-width:600px) {
+    body .content main .top .wrap {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        border: 0;
+        font-size: 16px;
+        text-align: center
+    }
+}
+
+@media only screen and (max-width:600px) {
+    body .content main .top {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        border: 0;
+        text-align: center
+    }
+}
+
+body .content main .down li {
+    padding: 5px;
+    border: 1px solid white
+}
+
+body .content main .down .right,
+body .content main .down .left {
+    display: inline-block;
+    width: 40%;
+    text-align: left;
+    border-radius: 10px;
+    margin: 10px;
+    background: rgba(248, 252, 255, 0.329)
+}
+
+body .content main .down .right .reportcolumn,
+body .content main .down .left .reportcolumn {
+    display: inline-block;
+    width: 80px
+}
+
+body .content main .down .right .backspan,
+body .content main .down .left .backspan {
+    display: inline-block;
+    padding: 3px;
+    border-radius: 3px
+}
+
+@media only screen and (max-width:600px) {
+
+    body .content main .down .right .backspan,
+    body .content main .down .left .backspan {
+        display: inline-block;
+        padding: 1px;
+        border-radius: 3px;
+        height: 26px;
+        line-height: 26px;
+        padding-left: 3px;
+        padding-right: 3px
+    }
+}
+
+@media only screen and (max-width:600px) {
+
+    body .content main .down .left,
+    body .content main .down .right {
+        padding: 0;
+        margin: 0 auto;
+        width: 95%;
+        border: 0;
+        font-size: 14px;
+        text-align: center
+    }
+}
+
+@media only screen and (max-width:600px) {
+    body .content main .wrap {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        border: 0;
+        font-size: 16px;
+        text-align: center
+    }
+}
+
+@media only screen and (max-width:600px) {
+    body .content main {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        border: 0;
+        text-align: center
+    }
+}
+
+body footer {
+    height: 80px;
+    line-height: 80px;
+    padding: 20px;
+    background: rgba(249, 249, 249, 0.3);
+    display: block;
+    width: 95%;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 8px;
+    font-size: 14px
+}
+
+@media only screen and (max-width:600px) {
+    body footer {
+        height: 40px;
+        line-height: 40px;
+        width: 90%
+    }
+}
+
+@media only screen and (max-width:600px) {
+    body .content {
+        padding: 0;
+        margin: 0 auto;
+        width: 90%;
+        border: 0;
+        margin-top: 10px;
+        line-height: 40px;
+        text-align: center;
+        background: rgba(249, 249, 249, 0.9);
+        display: block
+    }
+}
+
+@media only screen and (max-width:600px) {
+    body {
+        background-color: white;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        background: white;
+        font-size: 14px;
+        background: linear-gradient(to right, rgba(248, 4, 4, 0.77647059), orange, yellow,
+                green,
+                blue,
+                indigo,
+                violet)
+    }
+}
+
+/*# sourceMappingURL=./sun.css.map */
