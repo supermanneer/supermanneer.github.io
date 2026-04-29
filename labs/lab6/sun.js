@@ -26,7 +26,7 @@ window.onload=function(){
 };
 
 let cityArray=[
-    [1,'New York',40.71427,74.00597],
+    [1,'New York',40.71427,-74.00597],
     [2,'San Francisco',37.77493,-122.41942],
     [3,'Chicago',41.85003,-87.65005],
     [4,'Washington D.C.',38.89511,-77.03637],
@@ -53,10 +53,13 @@ var city=document.getElementById("city");
 
 function selectChange(obj){
     var showgeo=document.getElementById("showgeo");
-    var latitude=cityArray[obj][2];
-    var longtitude=cityArray[obj][3];
-    var cityName=cityArray[obj][1];
-  
+    var latitude=cityArray[obj-1][2];
+    var longtitude=cityArray[obj-1][3];
+    var cityName=cityArray[obj-1][1];
+   console.log(obj);
+   console.log(latitude);
+   console.log(longtitude);
+   console.log(cityName);
     showSunInfor(cityName,latitude,longtitude);
 
 }
