@@ -130,7 +130,7 @@ if ("geolocation" in navigator) {
       var longitude = position.coords.longitude; // longitude
       console.log("Latitude: " + latitude + ", Longitude: " + longitude);
       cityname="";
-      city.value = '-1';
+      city.value = '0';
       showSunInfor(cityname,latitude,longitude);
     }, function(error) {
       // failure to get geolocation
